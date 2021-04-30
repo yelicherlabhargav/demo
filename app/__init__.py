@@ -7,6 +7,10 @@ app = flask.Flask(__name__)
 @app.route("/")
 def home_view():
     return "<p>hello</p>"
+@app.route("/test")
+def test():
+	return "<p> This is working good,</p>"
+
 
 
 @app.route("/abc")
